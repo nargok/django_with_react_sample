@@ -63,7 +63,7 @@ class App extends Component {
         this.setState({
           logged_in: true,
           displayed_form: '',
-          username: json.user.username
+          username: json.username
         });
       });
   };

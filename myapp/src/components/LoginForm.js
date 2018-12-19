@@ -9,8 +9,8 @@ class LoginForm extends React.Component {
   handle_change = e => {
     const name = e.target.name;
     const value = e.target.value;
-    this.setState(prevstate => {
-      const newState = { ...prevstate };
+    this.setState(prevState => {
+      const newState = { ...prevState };
       newState[name] = value;
       return newState;
     });
@@ -24,14 +24,14 @@ class LoginForm extends React.Component {
         <input
           type="text"
           name="username"
-          // value={this.state.username}
+          value={this.state.username}
           onChange={this.handle_change}
         />
         <label htmlFor="password">Password</label>
         <input
           type="password"
           name="password"
-          // value={this.state.password}
+          value={this.state.password}
           onChange={this.handle_change}
         />
         <input type="submit"/>

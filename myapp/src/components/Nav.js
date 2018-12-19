@@ -3,8 +3,8 @@ import React from 'react';
 function Nav(props) {
   const logged_out_nav = (
       <ul>
-        <li onClick={() => props.display_form('login')}>Login</li>
-        <li onClick={() => props.display_form('singup')}>Signup</li>
+        <li onClick={() => props.display_form('login')} className="click_item">Login</li>
+        <li onClick={() => props.display_form('signup')} className="click_item">Signup</li>
       </ul>
     );
 
